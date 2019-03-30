@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:ExpandableStackLayout"
+             xmlns:CustomControls="clr-namespace:ExpandableStackLayout.CustomControls"
+             x:Class="ExpandableStackLayout.MainPage">
+    <StackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+        <!-- Custom Control -->
+        <CustomControls:ExpandableView>
+            <CustomControls:ExpandableView.Summary>
+               <StackLayout BackgroundColor="Lime">
+                    <Label Text="Click Here to Demo the expanable ContentView"></Label>
+                </StackLayout>
+            </CustomControls:ExpandableView.Summary>
+            <CustomControls:ExpandableView.Details>
+                <StackLayout BackgroundColor="Silver">
+                    <Label>
+                        <Label.Text> 
+                            blah blah 
+                            blah blah
+                            blah blah
+                            blah blah
+                            blah blah
+                         </Label.Text> 
+                    </Label>
+                </StackLayout>
+            </CustomControls:ExpandableView.Details>
+        </CustomControls:ExpandableView>
+    </StackLayout>
+</ContentPage>
