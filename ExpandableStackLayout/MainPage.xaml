@@ -4,16 +4,17 @@
              xmlns:local="clr-namespace:ExpandableStackLayout"
              xmlns:CustomControls="clr-namespace:ExpandableStackLayout.CustomControls"
              x:Class="ExpandableStackLayout.MainPage">
-    <StackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+    <StackLayout Orientation="Vertical" HorizontalOptions="Fill">
         <!-- Custom Control -->
         <CustomControls:ExpandableView>
             <CustomControls:ExpandableView.Summary>
-               <StackLayout BackgroundColor="Lime">
-                    <Label Text="Click Here to Demo the expanable ContentView"></Label>
+               <StackLayout BackgroundColor="Blue" HorizontalOptions="Center">
+                    <Label Text="Apply"></Label>
+                    <Button Text="ApplyButton"></Button>
                 </StackLayout>
             </CustomControls:ExpandableView.Summary>
             <CustomControls:ExpandableView.Details>
-                <StackLayout BackgroundColor="Silver">
+                <StackLayout BackgroundColor="#FAFAFA">
                     <Label>
                         <Label.Text> 
                             blah blah 
